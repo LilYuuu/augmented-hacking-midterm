@@ -11,11 +11,11 @@ import SwiftUI
 @main
 struct PlaneDetection: App {
     @StateObject var viewModel = ViewModel()
-    @StateObject private var arSessionManager = ARSessionManager()
+    @StateObject private var arSession = ARSessionManager()
     
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: viewModel)
+            ContentView(viewModel: viewModel, arSession: arSession)
                 .edgesIgnoringSafeArea(.all)
                 .statusBar(hidden: true)
         }

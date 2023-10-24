@@ -11,10 +11,11 @@ import SceneKit
 
 struct ContentView : View {
     @State var viewModel: ViewModel
+    @State var arSession: ARSessionManager
     
     var body: some View {
         ZStack {
-            ARViewContainer(viewModel: viewModel).edgesIgnoringSafeArea(.all)
+            ARViewContainer(viewModel: viewModel, arSession: arSession).edgesIgnoringSafeArea(.all)
         }
         
     }
@@ -22,6 +23,6 @@ struct ContentView : View {
 
 
 
-#Preview {
-    ContentView(viewModel: ViewModel())
-}
+//#Preview {
+//    ContentView(viewModel: ViewModel(), arSession: <#T##ARSessionManager#>)
+//}

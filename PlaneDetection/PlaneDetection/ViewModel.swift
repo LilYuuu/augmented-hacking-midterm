@@ -10,13 +10,13 @@ import Combine
 
 @MainActor
 class ViewModel: ObservableObject {
-    @Published var sliderValue: Float = 0.5
+//    @Published var sliderValue: Float = 0.5
 //    
 //    // For handling different button presses.
-    enum UISignal {
-        case reset
-    }
-    let uiSignal = PassthroughSubject<UISignal, Never>()
+//    enum UISignal {
+//        case reset
+//    }
+//    let uiSignal = PassthroughSubject<UISignal, Never>()
     
     
     init() {

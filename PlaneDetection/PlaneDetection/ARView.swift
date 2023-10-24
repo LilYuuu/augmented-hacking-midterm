@@ -12,9 +12,10 @@ import Combine
 
 struct ARViewContainer: UIViewRepresentable {
     let viewModel: ViewModel
+    let arSession: ARSessionManager
     
     func makeUIView(context: Context) -> SimpleARView {
-        SimpleARView(frame: .zero, viewModel: viewModel)
+        SimpleARView(frame: .zero, viewModel: viewModel, arSession: arSession)
         
 //        let arView = ARView(frame: .zero)
 //
@@ -42,9 +43,11 @@ class SimpleARView: ARView {
     var viewModel: ViewModel
     var arView: ARView { return self }
 //    @Published var sceneView: ARSCNView!
+    var arSession: ARSessionManager
     
-    init(frame: CGRect, viewModel: ViewModel) {
+    init(frame: CGRect, viewModel: ViewModel, arSession: ARSessionManager) {
         self.viewModel = viewModel
+        self.arSession = arSession
         super.init(frame: frame)
     }
     
