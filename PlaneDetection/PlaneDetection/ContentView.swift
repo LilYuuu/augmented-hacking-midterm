@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import SceneKit
 
 struct ContentView : View {
     @State var viewModel: ViewModel

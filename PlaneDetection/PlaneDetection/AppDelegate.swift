@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct PlaneDetection: App {
     @StateObject var viewModel = ViewModel()
+    @StateObject private var arSessionManager = ARSessionManager()
     
     var body: some Scene {
         WindowGroup {

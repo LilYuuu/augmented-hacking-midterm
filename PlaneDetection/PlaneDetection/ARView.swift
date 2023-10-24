@@ -41,6 +41,7 @@ struct ARViewContainer: UIViewRepresentable {
 class SimpleARView: ARView {
     var viewModel: ViewModel
     var arView: ARView { return self }
+//    @Published var sceneView: ARSCNView!
     
     init(frame: CGRect, viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -58,10 +59,16 @@ class SimpleARView: ARView {
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
-        UIApplication.shared.isIdleTimerDisabled = true
+//        // Configure your AR session here, e.g., plane detection, tracking, etc.
+//        let configuration = ARWorldTrackingConfiguration()
+//        configuration.planeDetection = [.horizontal, .vertical]
+//        sceneView.session.run(configuration)
+//        
+//        // Show debug UI to view performance metrics (e.g. frames per second).
+//        sceneView.showsStatistics = true
         
-//        setupScene()
-//        setupEntities()
-//        setupSubscriptions()
+        UIApplication.shared.isIdleTimerDisabled = true
     }
+    
+    
 }

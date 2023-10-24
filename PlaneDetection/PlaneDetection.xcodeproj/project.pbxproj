@@ -16,6 +16,9 @@
 		EEFB55122AE77A13000CF000 /* PlaneDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB55112AE77A13000CF000 /* PlaneDetectionUITestsLaunchTests.swift */; };
 		EEFB551F2AE77A31000CF000 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB551E2AE77A31000CF000 /* ARView.swift */; };
 		EEFB55212AE77A82000CF000 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB55202AE77A82000CF000 /* ViewModel.swift */; };
+		EEFB55232AE788C9000CF000 /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB55222AE788C9000CF000 /* ARSessionManager.swift */; };
+		EEFB55252AE79266000CF000 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB55242AE79266000CF000 /* Plane.swift */; };
+		EEFB55272AE7943F000CF000 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFB55262AE7943F000CF000 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		EEFB55112AE77A13000CF000 /* PlaneDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EEFB551E2AE77A31000CF000 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		EEFB55202AE77A82000CF000 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EEFB55222AE788C9000CF000 /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
+		EEFB55242AE79266000CF000 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		EEFB55262AE7943F000CF000 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				EEFB54F42AE77A11000CF000 /* AppDelegate.swift */,
 				EEFB54F62AE77A11000CF000 /* ContentView.swift */,
 				EEFB551E2AE77A31000CF000 /* ARView.swift */,
+				EEFB55242AE79266000CF000 /* Plane.swift */,
+				EEFB55262AE7943F000CF000 /* Utility.swift */,
+				EEFB55222AE788C9000CF000 /* ARSessionManager.swift */,
 				EEFB55202AE77A82000CF000 /* ViewModel.swift */,
 				EEFB54F82AE77A13000CF000 /* Assets.xcassets */,
 				EEFB54FA2AE77A13000CF000 /* Preview Content */,
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFB55272AE7943F000CF000 /* Utility.swift in Sources */,
 				EEFB54F72AE77A11000CF000 /* ContentView.swift in Sources */,
 				EEFB54F52AE77A11000CF000 /* AppDelegate.swift in Sources */,
+				EEFB55232AE788C9000CF000 /* ARSessionManager.swift in Sources */,
 				EEFB55212AE77A82000CF000 /* ViewModel.swift in Sources */,
+				EEFB55252AE79266000CF000 /* Plane.swift in Sources */,
 				EEFB551F2AE77A31000CF000 /* ARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
