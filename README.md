@@ -15,6 +15,7 @@
   * update placement position
   * place messages by specified plane category
   
+---
 
 ### Oct 26
 * Used raycasting for entity placement (Link to [tutorial](https://coledennis.medium.com/tutorial-tap-to-place-ar-content-using-realitykit-and-swiftui-e2579d93708d
